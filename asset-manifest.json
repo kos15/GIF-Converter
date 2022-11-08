@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/GIF-Converter/static/css/main.073c9b0a.css",
-    "main.js": "/GIF-Converter/static/js/main.e548751e.js",
-    "static/js/787.abf2a823.chunk.js": "/GIF-Converter/static/js/787.abf2a823.chunk.js",
-    "index.html": "/GIF-Converter/index.html",
-    "main.073c9b0a.css.map": "/GIF-Converter/static/css/main.073c9b0a.css.map",
-    "main.e548751e.js.map": "/GIF-Converter/static/js/main.e548751e.js.map",
-    "787.abf2a823.chunk.js.map": "/GIF-Converter/static/js/787.abf2a823.chunk.js.map"
+    "main.css": "/GIF_Converter/static/css/main.073c9b0a.css",
+    "main.js": "/GIF_Converter/static/js/main.eae8540e.js",
+    "static/js/787.abf2a823.chunk.js": "/GIF_Converter/static/js/787.abf2a823.chunk.js",
+    "index.html": "/GIF_Converter/index.html",
+    "main.073c9b0a.css.map": "/GIF_Converter/static/css/main.073c9b0a.css.map",
+    "main.eae8540e.js.map": "/GIF_Converter/static/js/main.eae8540e.js.map",
+    "787.abf2a823.chunk.js.map": "/GIF_Converter/static/js/787.abf2a823.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.e548751e.js"
+    "static/js/main.eae8540e.js"
   ]
 }
