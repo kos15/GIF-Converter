@@ -7,9 +7,8 @@ const ffmpeg = createFFmpeg({ log: true });
 function App() {
   const [ready, setReady] = useState(false);  // To keep track wheter we successfull import ffmpeg lib
   const [file, setFile] = useState(false);  // To keep track we successfull import our input file
-  const [gif, setGif] = useState(null); // to store our GIF file
-
-  let processingFlag = false;
+  const [gif, setGif] = useState(null); // To store our GIF file
+  const [processingFlag, setProcessingFlag] = useState(false);  // To show or hide processing tag
 
   /**
    * @description To load FFMPEG library
@@ -33,7 +32,7 @@ function App() {
    */
   const converGif = async () => {
     if (file) {
-      processingFlag = true;
+      setProcessingFlag(true);
       ffmpeg.FS("writeFile", "test.mp4", await fetchFile(file));
       await ffmpeg.run(
         "-i",
@@ -72,7 +71,7 @@ function App() {
    * @description To hide processing tag
    */
   useEffect(() => {
-    processingFlag = false;
+    setProcessingFlag(false)
   }, [gif])
 
   return ready ? (
@@ -86,10 +85,10 @@ function App() {
       <div>
         {gif ? (
           <img src={gif} alt="converted_GIF" height="400" width="300" style={{margin: '10px'}}/>
-        ) : {processingFlag} ? (
+        ) : processingFlag ? (
           <h1>Processing....</h1>
         ) : (
-          <h1></h1>
+          <h1> </h1>
         )}
       </div>
     </div>
